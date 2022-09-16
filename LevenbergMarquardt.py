@@ -92,7 +92,7 @@ class LevenbergMarquardt:
         self.num_iter = num_iter
          
     def __repr__(self) -> str:
-        return tc.info + f"Levenberg-Marquardt-Algorithm(Params: {self.num_params}, #iteration: {self.num_iter})"
+        return '\033[93m' + "[INFO] " + '\033[0m' + f"Levenberg-Marquardt-Algorithm(Params: {self.num_params}, #iteration: {self.num_iter})"
         
     def fit(self, x: torch.Tensor, y: torch.Tensor, verbose: int=1):
         """Tries to find a suitable set of parameters
