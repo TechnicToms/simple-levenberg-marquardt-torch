@@ -26,7 +26,7 @@ The first optimizer is the Levenberg-Marquardt method, which is based on the Gau
 The motivation of this algorithm is the least squares method for nonlinear functions f.
 As the objective function, the problem is defined here as follows:
 
-$$\\mathrm{argmin}_\\beta S(\\beta) = \\sum_{i=1}^m [y_i - f(x_i, \\beta)]^2$$
+$$\mathrm{argmin} S(\\beta) = \\sum_{i=1}^m [y_i - f(x_i, \\beta)]^2$$
 
 Therefore, equation (1) considers the squared error between an arbitrary function $f$ and the data points $y_i$ over the domain $x_i$.
 The algorithm then iteratively calculates a new $\delta$ for each step, which determines the new parameter values by adding them to $\beta$
